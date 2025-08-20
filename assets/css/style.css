@@ -34,8 +34,8 @@ img{max-width:100%; display:block}
 .menu a:hover{background:rgba(255,255,255,.07)}
 
 .hero{min-height:68vh; display:grid; place-items:center; background-image: var(--hero); background-size:cover; background-position:center; position:relative}
-.hero::after{content:""; position:absolute; inset:0; background:linear-gradient(180deg,rgba(0,0,0,.25),rgba(0,0,0,.6))}
-.hero-inner{position:relative; text-align:center; padding:2rem 0}
+.hero::after{content:""; position:absolute; inset:0; background:linear-gradient(180deg,rgba(0,0,0,.25),rgba(0,0,0,.6)); pointer-events:none; z-index:0}
+.hero-inner{position:relative; z-index:1; text-align:center; padding:2rem 0}
 .hero h1{font-size: clamp(2rem, 6vw, 4rem); margin:0 0 .4rem}
 .hero .tag{color:var(--muted); margin-bottom:1.2rem}
 
@@ -81,3 +81,10 @@ img{max-width:100%; display:block}
 @media (max-width: 899px){
   .menu{display:none}
 }
+
+
+/* Make entire card links clickable and styled */
+.card-link { display:block; color:inherit; text-decoration:none; }
+.card-link:hover .card { transform: scale(1.02); box-shadow:0 12px 28px rgba(0,0,0,.45); transition:.25s; }
+.table .cell.name a { color:inherit; text-decoration:none; }
+.table .cell.name a:hover { text-decoration:underline; }
