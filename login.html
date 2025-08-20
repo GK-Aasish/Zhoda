@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Features</title>
-  <meta name="description" content="Features — responsive layout based on your reference." />
+  <title>Login</title>
+  <meta name="description" content="Login — responsive layout based on your reference." />
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="preload" as="image" href="assets/images/1.png">
 </head>
@@ -28,46 +28,32 @@
 
   <main>
     <section class="page-hero" style="--page:url('assets/images/2.png')">
-      <div class="container"><h1>Features</h1></div>
+      <div class="container"><h1>Login</h1></div>
     </section>
 
-    <section class="cards container">
-      
-      <article class="card tile" style="--tile:url('assets/images/2.png')">
-        <h3>Feature Title 1</h3>
-        <p>Placeholder description for this feature. Replace with your text.</p>
-      </article>
-      <article class="card tile" style="--tile:url('assets/images/3.png')">
-        <h3>Feature Title 2</h3>
-        <p>Placeholder description for this feature. Replace with your text.</p>
-      </article>
-      <article class="card tile" style="--tile:url('assets/images/2.png')">
-        <h3>Feature Title 3</h3>
-        <p>Placeholder description for this feature. Replace with your text.</p>
-      </article>
-      <article class="card tile" style="--tile:url('assets/images/3.png')">
-        <h3>Feature Title 4</h3>
-        <p>Placeholder description for this feature. Replace with your text.</p>
-      </article>
-      <article class="card tile" style="--tile:url('assets/images/2.png')">
-        <h3>Feature Title 5</h3>
-        <p>Placeholder description for this feature. Replace with your text.</p>
-      </article>
-      <article class="card tile" style="--tile:url('assets/images/3.png')">
-        <h3>Feature Title 6</h3>
-        <p>Placeholder description for this feature. Replace with your text.</p>
-      </article>
+    <section class="form container tile" style="--tile:url('assets/images/3.png')">
+      <form class="contact-form" onsubmit="return false;">
+        <label>
+          <span>Username or Email</span>
+          <input type="text" placeholder="Enter your username or email" required>
+        </label>
+        <label>
+          <span>Password</span>
+          <input type="password" placeholder="Enter your password" required>
+        </label>
+        <button class="btn" type="submit">Sign In</button>
+      </form>
     </section>
   </main>
 
   <nav class="bottom-nav" role="navigation" aria-label="Primary">
 
-        <a class="bn-item " href="index.html">
+        <a class="bn-item active" href="index.html">
           <span class="bn-icon"><img src="assets/icons/home.svg" alt="" aria-hidden="true"></span>
           <span class="bn-label">Home</span>
         </a>
 
-        <a class="bn-item active" href="features.html">
+        <a class="bn-item " href="features.html">
           <span class="bn-icon"><img src="assets/icons/star.svg" alt="" aria-hidden="true"></span>
           <span class="bn-label">Features</span>
         </a>

@@ -1,17 +1,8 @@
-# Responsive Multipage Site (Reorganized)
+# Responsive Multipage Site (Centered Logo + Login Icon)
 
-Pages:
-- index.html
-- features.html
-- servers.html
-- mods.html
-- contact.html
+- Logo centered at top
+- Nav links directly under logo
+- Login icon in the top-right (links to `login.html`)
+- Mobile keeps a fixed bottom icon nav
 
-Structure:
-- assets/css/style.css
-- assets/js/main.js
-- assets/images/ (your images)
-- assets/icons/ (SVG icons)
-
-Desktop: top nav. Mobile: fixed bottom nav (icons + labels).
-All text is placeholder.
+Pages: index, features, servers, mods, contact, login.
