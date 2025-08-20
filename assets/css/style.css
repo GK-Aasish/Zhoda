@@ -88,3 +88,134 @@ img{max-width:100%; display:block}
 .card-link:hover .card { transform: scale(1.02); box-shadow:0 12px 28px rgba(0,0,0,.45); transition:.25s; }
 .table .cell.name a { color:inherit; text-decoration:none; }
 .table .cell.name a:hover { text-decoration:underline; }
+
+
+/* Mobile bottom nav */
+.mobile-nav {
+  display: none;
+}
+@media (max-width: 768px) {
+  .mobile-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #222;
+    padding: 0.5rem 0;
+    border-top: 1px solid #444;
+    z-index: 1000;
+  }
+  .mobile-nav a {
+    color: #fff;
+    font-size: 1.4rem;
+    text-decoration: none;
+  }
+  .mobile-nav a:hover {
+    color: #ddd;
+  }
+}
+
+
+
+/* --- Minecraft Theme (Refined, lightweight) --- */
+
+/* Pixel accent font for headings & logo only */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+:root{
+  --mc-sky:#88c9f9;
+  --mc-grass:#3fa64b;
+  --mc-dirt:#6b4e2e;
+  --mc-stone:#6e6e6e;
+  --mc-ink:#222;
+  --mc-off:#f3f3f3;
+}
+
+/* Keep body readable, only accent with pixel font */
+h1,h2,.logo{
+  font-family:'Press Start 2P', system-ui, sans-serif;
+  letter-spacing:0;
+  line-height:1.1;
+}
+
+/* Header / Footer bars with blocky borders */
+header{
+  background:var(--mc-grass);
+  border-bottom:4px solid var(--mc-dirt);
+}
+footer{
+  background:var(--mc-dirt);
+  color:#fff;
+  border-top:4px solid var(--mc-grass);
+}
+
+/* Blocky containers (do NOT override hero background) */
+.section,
+.card,
+.page-hero,
+.table,
+.form,
+.page-section{
+  border:3px solid #333;
+  border-radius:0;
+  box-shadow:0 4px 0 #1e1e1e;
+}
+
+/* Buttons: blocky with clicky feel */
+.btn, .btn-outline{
+  border-radius:0;
+  border:3px solid #333;
+  box-shadow:0 4px 0 #1e1e1e;
+  text-transform:uppercase;
+  letter-spacing:.5px;
+  font-weight:700;
+}
+.btn{
+  background:#c0c0c0;
+  color:#111;
+}
+.btn-outline{
+  background:transparent;
+  color:#fff;
+}
+.btn:hover, .btn-outline:hover{
+  transform:translateY(-1px);
+  box-shadow:0 5px 0 #1a1a1a;
+  background:var(--mc-grass);
+  color:#fff;
+  border-color:#1e4415;
+}
+.btn:active, .btn-outline:active{
+  transform:translateY(1px);
+  box-shadow:0 2px 0 #1a1a1a;
+}
+
+/* Cards content keeps your original backgrounds; just sharpen edges */
+.card.tile{
+  background:rgba(0,0,0,0.25);
+}
+
+/* Mobile hotbar nav */
+.mobile-nav{
+  background:#111;
+  border-top:4px solid #333;
+}
+.mobile-nav a{
+  background:#222;
+  border:2px solid #555;
+  padding:10px;
+  font-size:1.25rem;
+  border-radius:0;
+}
+.mobile-nav a:hover{
+  background:var(--mc-grass);
+  border-color:#1e4415;
+}
+
+/* Ensure mobile bottom nav doesn't cover content */
+@media (max-width:768px){
+  body{ padding-bottom:64px; }
+}
