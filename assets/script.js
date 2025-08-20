@@ -1,4 +1,4 @@
-// Optional smooth scrolling and minor interactions
+// Smooth scroll for internal navigation on same page links (not required for multipage but harmless)
 document.querySelectorAll('a[href^="#"]').forEach(a => {
   a.addEventListener('click', e => {
     const id = a.getAttribute('href').slice(1);

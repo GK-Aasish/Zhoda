@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Home</title>
-  <meta name="description" content="Home — generated to match your reference images." />
+  <title>Contact</title>
+  <meta name="description" content="Contact — generated to match your reference images." />
   <link rel="stylesheet" href="assets/styles.css" />
   <link rel="preload" as="image" href="assets/images/1.png">
 </head>
@@ -23,22 +23,26 @@
   </header>
 
   <main>
-    <section class="hero" style="--hero:url('assets/images/1.png')">
-      <div class="hero-inner container">
-        <h1>Placeholder Heading</h1>
-        <p class="tag">Short subheading text goes here.</p>
-        <div class="cta-row">
-          <a class="btn" href="features.html">Explore Features</a>
-          <a class="btn-outline" href="servers.html">View Servers</a>
-        </div>
-      </div>
+    <section class="page-hero" style="--page:url('assets/images/5.png')">
+      <div class="container"><h1>Contact</h1></div>
     </section>
 
-    <section class="block container" style="--block:url('assets/images/2.png')">
-      <div class="block-inner">
-        <h2>Section Title</h2>
-        <p>Body copy placeholder. Replace with your own content.</p>
-      </div>
+    <section class="form container tile" style="--tile:url('assets/images/2.png')">
+      <form class="contact-form" onsubmit="return false;">
+        <label>
+          <span>Your Name</span>
+          <input type="text" placeholder="Enter your name" required>
+        </label>
+        <label>
+          <span>Email</span>
+          <input type="email" placeholder="Enter your email" required>
+        </label>
+        <label>
+          <span>Message</span>
+          <textarea rows="5" placeholder="Type your message"></textarea>
+        </label>
+        <button class="btn" type="submit">Send</button>
+      </form>
     </section>
   </main>
 
